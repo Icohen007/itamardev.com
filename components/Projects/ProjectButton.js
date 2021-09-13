@@ -10,6 +10,7 @@ height: 55px;
 
 button{
 position: absolute;
+min-width: 7.5em;
 transform: translate(-50%);
 color:${firstBorderColor};
 padding:20px;
