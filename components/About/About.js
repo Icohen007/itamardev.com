@@ -58,7 +58,7 @@ span{
 }
   
 a{
-  margin-top: 4px;
+  vertical-align: top;
   margin-left: 5px;
 }
 `;
@@ -122,11 +122,6 @@ padding: 0 20rem;
 
 `;
 
-const FlexContainer = styled.div`
-  display: flex;
-  align-items: center;
-`
-
 const About = () => {
   const { aboutRef } = useContext(ScrollContext);
   const isMobile = useMobile();
@@ -179,10 +174,8 @@ const About = () => {
               .
               <p>
                 <br />
-                <FlexContainer>
                 Currently working as a Full Stack Web Developer at
                 <a href="https://www.taboola.com/" target="_blank" rel="noopener noreferrer" title="Taboola" aria-label="Taboola"><Image width={121} height={25} src='/facebook-logo.gif'/></a>
-                </FlexContainer>
               </p>
             </AboutText>
           </Zoom>
