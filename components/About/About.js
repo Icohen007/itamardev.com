@@ -6,6 +6,7 @@ import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { IoMdMail } from 'react-icons/io';
+import Image from 'next/image';
 import { animatedCards } from '../../lib/data';
 import { ScrollContext } from '../../hooks/ScrollProvider';
 import { useMobile } from '../../lib/queries';
@@ -17,7 +18,6 @@ import UnderLine from '../Shared/UnderLine.style';
 import SectionTitle from '../Shared/SectionTitle.style';
 import SubSectionTitle from '../Shared/SubSectionTitle';
 import TechSection from './TechSection';
-import Image from 'next/image';
 
 const Container = styled.section`
   width: 100%;
@@ -175,7 +175,7 @@ const About = () => {
               <p>
                 <br />
                 Currently working as a Full Stack Web Developer at
-                <a href="https://www.taboola.com/" target="_blank" rel="noopener noreferrer" title="Taboola" aria-label="Taboola"><Image width={121} height={25} src='/facebook-logo.gif'/></a>
+                <a href="https://www.taboola.com/" target="_blank" rel="noopener noreferrer" title="Taboola" aria-label="Taboola"><Image width={121} height={25} src="/facebook-logo.gif" /></a>
               </p>
             </AboutText>
           </Zoom>
