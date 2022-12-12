@@ -1,8 +1,10 @@
 import React, {
+  useCallback,
   useContext, useRef,
 } from 'react';
 import useTyped from 'use-typed';
-import Particles from 'react-particles-js';
+import Particles from 'react-particles';
+import { loadFull } from 'tsparticles';
 import styled from 'styled-components';
 import { particlesConfig } from '../../lib/config';
 import AnimatedArrow from './AnimatedArrow';
@@ -30,9 +32,13 @@ const Intro = () => {
     smartBackspace: true,
   });
 
+  const customInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+
   return (
     <Container id="intro" ref={introRef}>
-      <Particles className="particles" params={particlesConfig} />
+      <Particles className="particles" options={particlesConfig} init={customInit} />
       <FlexContainer>
         <FloatingText>
           {introDynamicText()}
