@@ -33,7 +33,7 @@
     "use-typed": "0.0.1"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^9.5.2",
+    "@next/bundle-analyzer": "^13.0.6",
     "babel-plugin-styled-components": "^1.8.0",
     "cross-env": "^7.0.2",
     "eslint": "^7.5.0",
