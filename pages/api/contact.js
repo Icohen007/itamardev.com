@@ -7,7 +7,7 @@ const auth = {
     domain: process.env.MAILGUN_DOMAIN,
   },
 };
-
+//
 const nodemailerMailgun = nodemailer.createTransport(mailGun(auth));
 
 export default function handle(req, res) {
