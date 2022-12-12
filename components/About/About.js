@@ -175,7 +175,7 @@ const About = () => {
               <p>
                 <br />
                 Currently working as a Full Stack Web Developer at
-                <a href="https://www.taboola.com/" target="_blank" rel="noopener noreferrer" title="Taboola" aria-label="Taboola"><Image width={121} height={25} src="/facebook-logo.gif" /></a>
+                <a href="https://www.meta.com" target="_blank" rel="noopener noreferrer" title="Facebook" aria-label="Facebook"><Image width={121} height={25} src="/facebook-logo.gif" /></a>
               </p>
             </AboutText>
           </Zoom>
